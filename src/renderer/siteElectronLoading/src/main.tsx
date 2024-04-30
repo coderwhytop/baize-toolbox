@@ -5,8 +5,13 @@ import { Spin } from "antd"
 import BaseApp from "@renderer/components/BaseApp"
 import { useTranslation } from "react-i18next"
 
+let a = 111(function () {
+  console.log(a)
+})()
+
 const App = () => {
   const { t } = useTranslation()
+
   return (
     <BaseApp>
       <div styleName="electron-loading">
